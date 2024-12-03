@@ -1,0 +1,44 @@
+body {
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #004aad;
+}
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+    border-radius: 15px 15px 0 0;
+}
+h1, h2 {
+    color: #004aad;
+    font-weight: bold;
+}
+table {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.btn {
+    border-radius: 50px;
+}
+.btn-success {
+    background: linear-gradient(135deg, #23c4ed, #1e90ff);
+    border: none;
+}
+.btn-warning {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    border: none;
+}
+.btn-danger {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border: none;
+}

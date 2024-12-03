@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Management System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav style="background-color: rgb(73, 11, 139);">
+        <div class="container-fluid">
+            <h1 class="text-center" style="color: aliceblue;">Bank Management System</h1>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4" style="color: black;">Manage Your Bank Accounts</h1>
+
+        <!-- Add Account Form -->
+        <div class="card mt-5">
+            <div class="card-header bg-primary text-white">Add New Account</div>
+            <div class="card-body">
+                <form id="addAccountForm">
+                    <div class="mb-3">
+                        <label for="accountName" class="form-label">Account Holder Name</label>
+                        <input type="text" class="form-control" id="accountName" placeholder="Enter name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountNumber" class="form-label">Account Number</label>
+                        <input type="text" class="form-control" id="accountNumber" placeholder="Enter account number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountType" class="form-label">Account Type</label>
+                        <select class="form-control" id="accountType" required>
+                            <option value="Savings">Savings</option>
+                            <option value="Current">Current</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="initialBalance" class="form-label">Initial Balance</label>
+                        <input type="number" class="form-control" id="initialBalance" placeholder="Enter initial balance" required>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Add Account</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Account List -->
+        <div class="mt-5">
+            <h2>Account List</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Account Holder Name</th>
+                        <th>Account Number</th>
+                        <th>Account Type</th>
+                        <th>Balance</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="accountList">
+                    <tr>
+                        <td colspan="5" class="text-muted text-center">No accounts added yet.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="continer-fluid">
+            
+            <h4 style="color: aliceblue; background-color: rgb(73, 11, 139);" class="text-center">shravani 2024 & 2025</h4>
+        
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

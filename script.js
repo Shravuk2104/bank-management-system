@@ -3,6 +3,7 @@ const accounts = [];
 
 function renderAccounts() {
     accountList.innerHTML = '';
+    
     if (accounts.length === 0) {
         accountList.innerHTML = '<tr><td colspan="5" class="text-muted text-center">No accounts added yet.</td></tr>';
     } else {
